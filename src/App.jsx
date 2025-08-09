@@ -1,14 +1,12 @@
-import { useLoaderData } from "react-router-dom"
+import { Outlet, useLoaderData } from "react-router-dom"
 
 import CoffeCard from "./Components/coffeCard"
 import { useState } from "react";
 
-
 function App() {
   const Loadedcoffees = useLoaderData();
-  
-   const [coffees,setCoffees]=useState(Loadedcoffees);
-   console.log(coffees)
+  const [coffees, setCoffees] = useState(Loadedcoffees);
+  console.log(coffees)
   return (
     <>
       <div className="m-20">
